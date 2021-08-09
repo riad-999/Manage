@@ -1,0 +1,267 @@
+main
+{
+    overflow:hidden;
+}
+.information
+{
+    display:grid;
+    grid-template-columns: 1fr;
+    padding:0 1rem;
+    width:min(95%,1200px);
+    margin:0 auto 5rem;
+}
+.stats
+{
+    order:-1;
+    margin-bottom: 5rem;
+}
+.stats__img
+{
+    width:100%;
+}
+.bring,
+.different
+{
+    margin-bottom: 5rem;
+}
+.bring p
+{
+    margin-bottom: 1rem;
+}
+.step
+{
+    margin-bottom: 2rem;
+}
+.step__top
+{
+    display:flex;
+    border-radius: 2rem 0 0 2rem;
+    margin-bottom: 1rem;
+    background-color: var(--shodow-orane);
+}
+.counter
+{
+    background-color: var(--orange);
+    color:white;
+    font-weight: var(--bold);
+    padding:.5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    z-index: 1;
+}
+.step__top h3
+{
+    padding:.5rem;
+}
+.center
+{
+    text-align: center;
+}
+ .cards-container
+{
+    padding-top:10rem;
+    overflow: hidden;
+    margin:0 auto 2rem;
+    width:90%;    
+}
+.cards
+{
+    width:calc(100% * 4);
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(0,1fr));
+}
+.card
+{
+    padding:0 1rem 2rem;
+    text-align: center;
+    background-color:var(--card-bg);
+    transform:translateX(0);
+    transition: transform .5s;
+} 
+.card__img
+{
+    transform: translateY(-50%);
+}
+.card__hiding 
+{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.simplify
+{
+    margin-top: 5rem;
+    background-color: var(--orange);
+    padding:4rem 3rem;
+    text-align: center;
+}
+.btn-container
+{
+    margin-bottom: 3rem;
+}
+.simplify h1
+{
+    color:white;
+    margin-bottom: 2rem;
+}
+.simplify .btn
+{
+    background-color: white;
+    color:var(--orange);
+}
+.home-footer
+{
+    padding:4rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--footer-bg);
+}
+.home-footer input
+{
+    padding:1rem;
+    border-radius: 1.5rem;
+    border:none;
+    margin-right: 1rem;
+}
+.home-footer > * 
+{
+    margin-bottom: 4rem;
+}
+.top-footer > *
+{
+    margin-bottom: 1rem;
+}
+.social-media i
+{   
+    margin-right: 1rem;
+}
+.home-footer li
+{
+    margin-bottom: 1rem;
+}
+.home-footer nav
+{
+    flex-basis: 30%;
+    display:flex;
+    justify-content:space-evenly;
+}
+.top-footer,
+.home-footer form
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+ul
+{
+    list-style-type: none;
+}
+.bullet
+{
+    display: inline-block;
+    width:6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+.bullets-wraper
+{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.current
+{
+    background-color: var(--orange);
+}
+.bullet:not(.bullet:last-child)
+{
+    margin-right:.5rem;
+}
+@media screen and (min-width:1000px)
+{
+    .information
+    {
+        grid-template-columns:1fr 1fr;
+        grid-column-gap:4rem;
+        padding:0 3rem;
+    }
+    .stats
+    {
+        order:0;
+    }
+    .different
+    {
+        margin:0;
+    }
+    .step
+    .step__top h3
+    {
+        background-color: inherit;
+        font-size: 1.3rem;
+    }
+    .cards
+    {
+        width:initial;
+        grid-template-columns: repeat(auto-fit,minmax(0,1fr));
+        grid-gap:2rem;
+    }
+    .btn-container
+    {
+        width: 0;
+        height: 0;
+        overflow:hidden;
+        visibility: none;
+    }
+    .card:not(.card:nth-child(-n + 3))
+    {
+        display:none;
+    }
+    .home-footer
+    {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .home-footer form 
+    {
+        width:30%;
+    }
+    .top-footer
+    {
+        width:30%;
+    }
+    .home-footer input
+    {
+        width:60%;
+    }
+    .top-footer,.home-footer form
+    {
+        margin-right: initial;
+        margin-left: initial;
+    }
+    .card
+    {
+        transition: transform 0s;
+        transform: translateX(0) !important;
+    }
+    .bullet
+    {
+        width:0;
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+    }
+    .step
+    {
+        position: relative;
+        padding-left:5rem;
+    }
+    .step__top
+    {
+        background-color: inherit;
+    }
+    .counter
+    {
+        position:absolute;
+        top:.5rem;
+        left:0;
+    }
+}

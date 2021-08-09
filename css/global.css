@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before
+{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+:root
+{
+    --desktop:1000px;
+    --orange:hsl(12, 88%, 59%);
+    --hiding-clr:hsl(228, 39%, 23%);
+    --footer-bg:hsl(233, 12%, 13%);
+    --shodow-orane:hsl(13, 100%, 96%);
+    --text-clr:hsl(227, 12%, 61%);
+    --card-bg:hsl(0, 0%, 98%);
+
+    --font-size:16px;
+    --regular:400;
+    --med:500;
+    --bold:700;
+
+    background-image: url("../image/bg-simplify-section-mobile.svg");
+}
+body
+{
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: var(--font-size);
+    color:var(--text-clr);
+}
+button
+{
+    background-color: inherit;
+    border:none;
+    border-width: 0;
+    cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4
+{
+    color:var(--hiding-clr);
+    font-weight:var(--bold);
+    margin-bottom: 1rem;
+}
+h4
+{
+    font-size:1rem;
+}
+h3
+{
+    font-size: 1.3rem;
+}
+h2
+{
+    font-size:1.69rem;
+    line-height: 1.1;
+}
+h1
+{
+    font-size:2.2rem;
+    line-height: 1.1;
+}
+a
+{
+    text-decoration: none;
+    color:inherit;
+}
+@media screen and (min-width:1000px) 
+{
+    h3
+    {
+        font-size: 1.1rem;
+    }
+    h2
+    {
+        font-size: 1.5rem;
+    }
+    h1
+    {
+        font-size: 1.8rem;
+    }
+}
+      
