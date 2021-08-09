@@ -67,13 +67,31 @@ class Slid
             prevtElement.classList.add("current");
         }
     }
-    static pointerdonw(event)
+    static touchstart(event)
     {
-        Slid.startX = event.pageX;
+        Slid.startX = console.log(event.touches[0].clientX);
+        console.log(event)
     }
-    static pointerup(event)
+    static touchend(event)
     {
-        Slid.endX = event.pageX;
+        Slid.endX = console.log(event.touches[0].clientX);
+        if(Slid.startX < Slid.endX)
+        {
+            Slid.prev();
+        }
+        else
+        {
+            if(Slid.startX != Slid.endX)
+                Slid.next();
+        }
+    }
+    static mousedown(event)
+    {
+        Slid.startX = event.clientX;
+    }
+    static mouseup(event)
+    {
+        Slid.endX = event.clientX;
         if(Slid.startX < Slid.endX)
         {
             Slid.prev();
