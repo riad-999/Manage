@@ -6,3 +6,8 @@ document.querySelector(".cards-container").
 addEventListener("pointerdown",Slid.pointerdonw);
 document.querySelector(".cards-container").
 addEventListener("pointerup",Slid.pointerup);
+document.querySelector(".cards-container").
+addEventListener("pointermove",event=>
+{
+    event.preventDefault();
+});
