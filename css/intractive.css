@@ -69,6 +69,7 @@
     border-radius: 1.5rem;
     letter-spacing: 3px;
     transition: opacity .3s;
+    box-shadow: 0 0 8px 0 var(--orange) ;
 }
 .btn:hover
 {

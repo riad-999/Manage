@@ -20,14 +20,17 @@
     --regular:400;
     --med:500;
     --bold:700;
-
-    background-image: url("../image/bg-simplify-section-mobile.svg");
 }
 body
 {
     font-family: 'Be Vietnam', sans-serif;
     font-size: var(--font-size);
     color:var(--text-clr);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: top right,center left ;
+    background-image:url("../image/bg-tablet-pattern.svg"),
+    url("../image/bg-tablet-pattern.svg");
 }
 button
 {
