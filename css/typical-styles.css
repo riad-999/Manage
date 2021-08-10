@@ -124,6 +124,10 @@ main
     padding:4rem 3rem;
     text-align: center;
 }
+.simplify li:focus
+{
+    outline: solid var(--text-clr) 2px;
+}
 .simplify h1
 {
     color:white;

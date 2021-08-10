@@ -36,7 +36,7 @@
 {
     opacity: .6;
 }
-.nav-list:focus
+.nav-list__item:focus
 {
     outline: solid var(--text-clr) 2px;
 }
