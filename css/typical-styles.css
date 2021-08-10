@@ -89,7 +89,7 @@ main
     font-size: 1.2rem;
     background-color: var(--orange);
     visibility: hidden;
-    /* opacity:0; */
+    opacity:0;
     z-index: 1;
     transition: opacity .4s;
     box-shadow: 0 0 8px 0 var(--orange);
