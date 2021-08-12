@@ -69,19 +69,18 @@ class Slid
     }
     static touchstart(event)
     {
-        Slid.startX = console.log(event.touches[0].clientX);
-        console.log(event)
+        Slid.startX =event.touches[0].clientX;
     }
     static touchend(event)
     {
-        Slid.endX = console.log(event.touches[0].clientX);
+        Slid.endX = event.touches[0].clientX;
         if(Slid.startX < Slid.endX)
         {
             Slid.prev();
         }
         else
         {
-            if(Slid.startX != Slid.endX)
+            if(Slid.startX != Slid.endX) 
                 Slid.next();
         }
     }
