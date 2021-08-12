@@ -94,8 +94,8 @@ main
     transition: opacity .4s;
     box-shadow: 0 0 8px 0 var(--orange);
 }
-.cards-container:hover .next,
-.cards-container:hover .prev
+.show .next,
+.show .prev
 {
     visibility: visible;
     opacity: 1;

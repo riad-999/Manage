@@ -1,24 +1,34 @@
 document.querySelector(".show-close-btns").
 addEventListener("click",show_close_click);
 
+const cards_container = document.querySelector(".cards-container");
+
+cards_container.addEventListener("mouseover",e=>
+{
+    e.currentTarget.classList.
+    add("show");
+});
+cards_container.addEventListener("mouseleave",e=>
+{
+    e.currentTarget.classList.remove("show");
+});
+
 document.querySelector(".next").addEventListener
 ("click",Slid.next);
 document.querySelector(".prev").addEventListener
-("click",Slid.prev)
-document.querySelector(".cards-container").
+("click",Slid.prev);
+
+cards_container.
 addEventListener("mousedown",Slid.mousedown);
 
-document.querySelector(".cards-container").
+cards_container.
 addEventListener("mouseup",Slid.mouseup);
 
-document.querySelector(".cards-container").
+cards_container.
 addEventListener("touchstart",Slid.touchstart);
 
-document.querySelector(".cards-container").
+cards_container.
+addEventListener("touchmove",Slid.touchmove);
+
+cards_container.
 addEventListener("touchend",Slid.touchend);
-
-// document.querySelector(".cards-container").
-// addEventListener("pointerdown",Slid.mousedown);
-
-// document.querySelector(".cards-container").
-// addEventListener("pointerup",Slid.mouseup);

@@ -13,6 +13,7 @@ class Slid
     static max = 3;
     static startX ;
     static endX;
+    static last_move;
     
     static swip()
     {
@@ -71,9 +72,13 @@ class Slid
     {
         Slid.startX =event.touches[0].clientX;
     }
+    static touchmove(event)
+    {
+        Slid.last_move = event.touches[0].clientX;
+    }
     static touchend(event)
     {
-        Slid.endX = event.touches[0].clientX;
+        Slid.endX = Slid.last_move;
         if(Slid.startX < Slid.endX)
         {
             Slid.prev();
