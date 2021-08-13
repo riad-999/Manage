@@ -269,7 +269,7 @@ ul
     .card
     {
         transition: transform 0s;
-        transform: translateX(0) !important;
+        transform: translateX(0) !important; /*to override js online styles*/
     }
     .bullet
     {
@@ -296,6 +296,6 @@ ul
     .next,
     .prev
     {
-        visibility: hidden;
+        visibility: hidden !important; /*to override js online styles*/
     }
 }
