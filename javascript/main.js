@@ -28,7 +28,8 @@ cards_container.
 addEventListener("touchstart",Slid.touchstart);
 
 cards_container.
-addEventListener("touchmove",Slid.touchmove);
+addEventListener("touchmove",Slid.touchmove,
+{passive:true});
 
 cards_container.
 addEventListener("touchend",Slid.touchend);
