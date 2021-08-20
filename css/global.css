@@ -27,8 +27,9 @@ body
     font-size: var(--font-size);
     color:var(--text-clr);
     background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: top right,center left ;
+    background-size: 80%;
+    background-position: top -5rem right -5rem,
+                        right -10rem top 40rem ;
     background-image:url("../image/bg-tablet-pattern.svg"),
     url("../image/bg-tablet-pattern.svg");
 }
@@ -84,6 +85,12 @@ a
     h1
     {
         font-size: 1.8rem;
+    }
+    body
+    {
+        background-size:40%;
+        background-position: top -5rem right -5rem,
+                    left -20rem bottom 40rem ;
     }
 }
       

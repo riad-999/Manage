@@ -34,3 +34,20 @@ addEventListener("touchmove",Slid.touchmove,
 
 cards_container.
 addEventListener("touchend",Slid.touchend);
+
+document.forms[0].
+addEventListener("submit", e =>
+{
+    e.preventDefault();
+    const value = e.currentTarget.querySelector("input").value;
+    console.log(value);
+    const regex = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+    if(!regex.test(value))
+    {
+        alert("invalid email");
+    }
+    if(value === "")
+    {
+        alert("please fill the input before submit");
+    }
+})
